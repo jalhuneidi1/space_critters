@@ -1,5 +1,3 @@
-//Description: This script controls the movement of the character, including walking, jumping, and swinging the arm.
-
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -22,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
 
     // A boolean variable to track whether the arm is swinging.
     private bool isSwingingArm = false;
+
+    // Declare armRotation outside of the if block.
+    private float armRotation = 0f;
 
     // Start is called before the first frame update.
     private void Start()
@@ -54,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
         // If the arm is swinging, then rotate the arm up and down using the armSwingSpeed variable.
         if (isSwingingArm)
         {
-            float armRotation = armAnimator.GetFloat("ArmRotation");
             armRotation += armSwingSpeed * Time.deltaTime;
             armAnimator.SetFloat("ArmRotation", armRotation);
         }
