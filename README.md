@@ -5,8 +5,8 @@
 - Mars
 
 ## Controls
-| Input            | Description                   |
-| ---------------- | ----------------------------- |
-| WASD             | Character Movement            |
-| Space            | Jump                          |
-| Left Mouse Click | Arm Movement (catch critters) |
+| Input            | Description                      |
+| ---------------- | -------------------------------- |
+| WASD Keys        | Character Movement               |
+| Space            | Jump                             |
+| C Key            | Enable/Disable Bug Catching Mode |
