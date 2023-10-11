@@ -12,7 +12,7 @@ using StarterAssets;
 public class CatchMode : MonoBehaviour
 {
     // Disable bug catching mode
-        bool inCatchMode = false;
+    bool inCatchMode = false;
 
     
     // Start is called before the first frame update
@@ -33,13 +33,6 @@ public class CatchMode : MonoBehaviour
             // Sets inCatchMode boolean value to true
             EnableCatchMode(!inCatchMode);
            
-        }
- 
-        // Check if the player presses the right mouse button
-         if (Input.GetKeyDown(KeyCode.Mouse1))
-        {
-            // Log message when right button is pressed
-            Debug.Log("Right Mouse key was pressed.");
         }
         
     }
